@@ -24,7 +24,7 @@
         <div id="nav">
           
             <a href="/cAPI/index.html">
-              &#187; decopac
+              &#187; Cakes
             </a>
           
           
@@ -50,7 +50,7 @@
     </h3>
 
           <div class="CodeRay"><pre>{
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">api_key</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">access_token</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd</span><span class="delimiter">&quot;</span></span>,
   <span class="key"><span class="delimiter">&quot;</span><span class="content">order_number</span><span class="delimiter">&quot;</span></span>: <span class="integer">21</span>
 }</pre></div>
 
@@ -60,14 +60,14 @@
       </a>
     </h3>
 
-          <div class="schema"><ul><li>    <span id="api_key--1020901884">
-      <a href="#api_key--1020901884" class="anchor">
-        <tt>api_key</tt>
+          <div class="schema"><ul><li>    <span id="access_token-220128085">
+      <a href="#access_token-220128085" class="anchor">
+        <tt>access_token</tt>
       </a>
     </span>
-<div class="schema"><p>The bakery API key</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li></ul></div></li><li>    <span id="order_number-953552618">
-      <a href="#order_number-953552618" class="anchor">
+<div class="schema"><p>The bakery access token</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li></ul></div></li><li>    <span id="order_number--73556080">
+      <a href="#order_number--73556080" class="anchor">
         <tt>order_number</tt>
       </a>
     </span>
@@ -89,13 +89,15 @@ Parameter should replace the <code>{order_number}</code> in the URL.</p>
       </a>
     </h3>
 
-          <div class="CodeRay"><pre>[
-  {
-    <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">buser@cakes.com</span><span class="delimiter">&quot;</span></span>,
-    <span class="key"><span class="delimiter">&quot;</span><span class="content">body</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">We will not have this cake in stock for several days.</span><span class="delimiter">&quot;</span></span>,
-    <span class="key"><span class="delimiter">&quot;</span><span class="content">date</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">2014-02-05 18:45:57 -0600</span><span class="delimiter">&quot;</span></span>
-  }
-]</pre></div>
+          <div class="CodeRay"><pre>{
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">comments</span><span class="delimiter">&quot;</span></span>: [
+    {
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">buser@cakes.com</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">body</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">We will not have this cake in stock for several days.</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">date</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">2014-02-05 18:45:57 -0600</span><span class="delimiter">&quot;</span></span>
+    }
+  ]
+}</pre></div>
 
               <h3 id="response_parameters">
       <a href="#response_parameters" class="anchor">
@@ -103,27 +105,32 @@ Parameter should replace the <code>{order_number}</code> in the URL.</p>
       </a>
     </h3>
 
-          <div class="schema"><p>Order comments</p>
-<ul><li>Type: array</li><li>Items<div class="schema"><p>An order comment</p>
-<ul><li>Required: no</li><li>title: comment</li><li>    <span id="email--703773151">
-      <a href="#email--703773151" class="anchor">
+          <div class="schema"><ul><li>    <span id="comments-291348514">
+      <a href="#comments-291348514" class="anchor">
+        <tt>comments</tt>
+      </a>
+    </span>
+<div class="schema"><p>List of order comments</p>
+<ul><li>Required: yes</li><li>Type: array</li><li>Items<div class="schema"><p>An order comment</p>
+<ul><li>Required: no</li><li>title: comment</li><li>    <span id="email--35946465">
+      <a href="#email--35946465" class="anchor">
         <tt>email</tt>
       </a>
     </span>
 <div class="schema"><p>Email address of the commenting user</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;buser@cakes.com&quot;</tt></li></ul></div></li><li>    <span id="body--698343814">
-      <a href="#body--698343814" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;buser@cakes.com&quot;</tt></li></ul></div></li><li>    <span id="body--652394347">
+      <a href="#body--652394347" class="anchor">
         <tt>body</tt>
       </a>
     </span>
 <div class="schema"><p>Content of the order comment</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;We will not have this cake in stock for several days.&quot;</tt></li></ul></div></li><li>    <span id="date--841371634">
-      <a href="#date--841371634" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;We will not have this cake in stock for several days.&quot;</tt></li></ul></div></li><li>    <span id="date-370314175">
+      <a href="#date-370314175" class="anchor">
         <tt>date</tt>
       </a>
     </span>
 <div class="schema"><p>The date the comment was created</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 18:45:57 -0600&quot;</tt></li></ul></div></li></ul></div></li></ul></div>
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 18:45:57 -0600&quot;</tt></li></ul></div></li></ul></div></li></ul></div></li></ul></div>
         
 
             <h3 id="response_codes">
@@ -169,7 +176,7 @@ Parameter should replace the <code>{order_number}</code> in the URL.</p>
         <span class="status">
           401 Unauthorized
         </span>
-        <p>API key incorrect or missing</p>
+        <p>Access token is incorrect or missing</p>
 
       </div>
 

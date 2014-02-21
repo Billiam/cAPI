@@ -24,7 +24,7 @@
         <div id="nav">
           
             <a href="/cAPI/index.html">
-              &#187; decopac
+              &#187; Cakes
             </a>
           
           
@@ -50,7 +50,7 @@
     </h3>
 
           <div class="CodeRay"><pre>{
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">api_key</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">access_token</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd</span><span class="delimiter">&quot;</span></span>,
   <span class="key"><span class="delimiter">&quot;</span><span class="content">active</span><span class="delimiter">&quot;</span></span>: <span class="value">false</span>
 }</pre></div>
 
@@ -60,14 +60,14 @@
       </a>
     </h3>
 
-          <div class="schema"><ul><li>    <span id="api_key--1020901884">
-      <a href="#api_key--1020901884" class="anchor">
-        <tt>api_key</tt>
+          <div class="schema"><ul><li>    <span id="access_token-220128085">
+      <a href="#access_token-220128085" class="anchor">
+        <tt>access_token</tt>
       </a>
     </span>
-<div class="schema"><p>The bakery API key</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li></ul></div></li><li>    <span id="active-452328497">
-      <a href="#active-452328497" class="anchor">
+<div class="schema"><p>The bakery access token</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li></ul></div></li><li>    <span id="active--652470599">
+      <a href="#active--652470599" class="anchor">
         <tt>active</tt>
       </a>
     </span>
@@ -128,147 +128,147 @@
       </a>
     </h3>
 
-          <div class="schema"><ul><li>    <span id="orders--183257722">
-      <a href="#orders--183257722" class="anchor">
+          <div class="schema"><ul><li>    <span id="orders-73139252">
+      <a href="#orders-73139252" class="anchor">
         <tt>orders</tt>
       </a>
     </span>
 <div class="schema"><ul><li>Required: no</li><li>Type: array</li><li>Items<div class="schema"><p>A cake order</p>
-<ul><li>Required: no</li><li>title: order</li><li>    <span id="order_number--912835626">
-      <a href="#order_number--912835626" class="anchor">
+<ul><li>Required: no</li><li>title: order</li><li>    <span id="order_number-249733656">
+      <a href="#order_number-249733656" class="anchor">
         <tt>order_number</tt>
       </a>
     </span>
 <div class="schema"><p>The order number</p>
-<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>4100</tt></li></ul></div></li><li>    <span id="order_state-505727506">
-      <a href="#order_state-505727506" class="anchor">
+<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>4100</tt></li></ul></div></li><li>    <span id="order_state-31105648">
+      <a href="#order_state-31105648" class="anchor">
         <tt>order_state</tt>
       </a>
     </span>
 <div class="schema"><p>The order status</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;accepted&quot;</tt></li><li>Enum: <tt>accepted</tt>, <tt>conditional</tt>, <tt>cancelled</tt>, <tt>new</tt></li></ul></div></li><li>    <span id="price--332312789">
-      <a href="#price--332312789" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;accepted&quot;</tt></li><li>Enum: <tt>accepted</tt>, <tt>conditional</tt>, <tt>cancelled</tt>, <tt>new</tt></li></ul></div></li><li>    <span id="price-893119802">
+      <a href="#price-893119802" class="anchor">
         <tt>price</tt>
       </a>
     </span>
 <div class="schema"><p>The order price, excluding tax</p>
-<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>41.53</tt></li></ul></div></li><li>    <span id="item_number--130231963">
-      <a href="#item_number--130231963" class="anchor">
+<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>41.53</tt></li></ul></div></li><li>    <span id="item_number-994189996">
+      <a href="#item_number-994189996" class="anchor">
         <tt>item_number</tt>
       </a>
     </span>
 <div class="schema"><p>The cake ID being ordered.</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;13992&quot;</tt></li></ul></div></li><li>    <span id="cake_name--1072590951">
-      <a href="#cake_name--1072590951" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;13992&quot;</tt></li></ul></div></li><li>    <span id="cake_name-262079664">
+      <a href="#cake_name-262079664" class="anchor">
         <tt>cake_name</tt>
       </a>
     </span>
 <div class="schema"><p>The name of the cake</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Dinosaur Train Express&quot;</tt></li></ul></div></li><li>    <span id="size-358731732">
-      <a href="#size-358731732" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Dinosaur Train Express&quot;</tt></li></ul></div></li><li>    <span id="size-284116815">
+      <a href="#size-284116815" class="anchor">
         <tt>size</tt>
       </a>
     </span>
 <div class="schema"><p>Cake size</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;1/2 Sheet&quot;</tt></li></ul></div></li><li>    <span id="flavor--238966336">
-      <a href="#flavor--238966336" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;1/2 Sheet&quot;</tt></li></ul></div></li><li>    <span id="flavor--1070131120">
+      <a href="#flavor--1070131120" class="anchor">
         <tt>flavor</tt>
       </a>
     </span>
 <div class="schema"><p>Cake flavor</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Chocolate&quot;</tt></li></ul></div></li><li>    <span id="filling-913747594">
-      <a href="#filling-913747594" class="anchor">
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Chocolate&quot;</tt></li></ul></div></li><li>    <span id="filling--1013103589">
+      <a href="#filling--1013103589" class="anchor">
         <tt>filling</tt>
       </a>
     </span>
 <div class="schema"><p>Cake filling flavor</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Cannoli&quot;</tt></li></ul></div></li><li>    <span id="icing_flavor-557022064">
-      <a href="#icing_flavor-557022064" class="anchor">
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Cannoli&quot;</tt></li></ul></div></li><li>    <span id="icing_flavor-451221377">
+      <a href="#icing_flavor-451221377" class="anchor">
         <tt>icing_flavor</tt>
       </a>
     </span>
 <div class="schema"><p>Cake icing flavor</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Chocolate Fudge&quot;</tt></li></ul></div></li><li>    <span id="inscription_color-363462214">
-      <a href="#inscription_color-363462214" class="anchor">
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Chocolate Fudge&quot;</tt></li></ul></div></li><li>    <span id="inscription_color--991214194">
+      <a href="#inscription_color--991214194" class="anchor">
         <tt>inscription_color</tt>
       </a>
     </span>
 <div class="schema"><p>Custom message icing color</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Brown&quot;</tt></li></ul></div></li><li>    <span id="inscription--1039813093">
-      <a href="#inscription--1039813093" class="anchor">
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Brown&quot;</tt></li></ul></div></li><li>    <span id="inscription--87492819">
+      <a href="#inscription--87492819" class="anchor">
         <tt>inscription</tt>
       </a>
     </span>
 <div class="schema"><p>Custom message content</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Happy Birthday Andrew!&quot;</tt></li></ul></div></li><li>    <span id="notes-781457106">
-      <a href="#notes-781457106" class="anchor">
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Happy Birthday Andrew!&quot;</tt></li></ul></div></li><li>    <span id="notes--568578451">
+      <a href="#notes--568578451" class="anchor">
         <tt>notes</tt>
       </a>
     </span>
 <div class="schema"><p>Additional notes for the cake decorator</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Please add a smiley face above the word happy.&quot;</tt></li></ul></div></li><li>    <span id="requested_pickup-465417485">
-      <a href="#requested_pickup-465417485" class="anchor">
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Please add a smiley face above the word happy.&quot;</tt></li></ul></div></li><li>    <span id="requested_pickup--728874608">
+      <a href="#requested_pickup--728874608" class="anchor">
         <tt>requested_pickup</tt>
       </a>
     </span>
 <div class="schema"><p>The requested pickup date</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 17:55:59 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_placed-1003068582">
-      <a href="#order_placed-1003068582" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 17:55:59 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_placed-496013896">
+      <a href="#order_placed-496013896" class="anchor">
         <tt>order_placed</tt>
       </a>
     </span>
 <div class="schema"><p>The date that the order was placed</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 14:05:00 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_accepted-50422745">
-      <a href="#order_accepted-50422745" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 14:05:00 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_accepted-14852903">
+      <a href="#order_accepted-14852903" class="anchor">
         <tt>order_accepted</tt>
       </a>
     </span>
 <div class="schema"><p>The date that the order was accepted</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 16:18:21 -0600&quot;</tt></li></ul></div></li><li>    <span id="customer--150315428">
-      <a href="#customer--150315428" class="anchor">
+<ul><li>Required: no</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 16:18:21 -0600&quot;</tt></li></ul></div></li><li>    <span id="customer-106196393">
+      <a href="#customer-106196393" class="anchor">
         <tt>customer</tt>
       </a>
     </span>
 <div class="schema"><p>Customer information</p>
-<ul><li>Required: yes</li><li>    <span id="name-491626796">
-      <a href="#name-491626796" class="anchor">
+<ul><li>Required: yes</li><li>    <span id="name-368950420">
+      <a href="#name-368950420" class="anchor">
         <tt>name</tt>
       </a>
     </span>
 <div class="schema"><p>Customer name</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Andrew Aaronson&quot;</tt></li></ul></div></li><li>    <span id="phone-785075660">
-      <a href="#phone-785075660" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Andrew Aaronson&quot;</tt></li></ul></div></li><li>    <span id="phone--232637379">
+      <a href="#phone--232637379" class="anchor">
         <tt>phone</tt>
       </a>
     </span>
 <div class="schema"><p>Customer phone number</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;612-555-1212&quot;</tt></li></ul></div></li><li>    <span id="email--399043693">
-      <a href="#email--399043693" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;612-555-1212&quot;</tt></li></ul></div></li><li>    <span id="email--532963313">
+      <a href="#email--532963313" class="anchor">
         <tt>email</tt>
       </a>
     </span>
 <div class="schema"><p>Customer email address</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaronson@example.com&quot;</tt></li></ul></div></li></ul></div></li><li>    <span id="comments--697237072">
-      <a href="#comments--697237072" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaronson@example.com&quot;</tt></li></ul></div></li></ul></div></li><li>    <span id="comments-838838100">
+      <a href="#comments-838838100" class="anchor">
         <tt>comments</tt>
       </a>
     </span>
 <div class="schema"><p>Order comments</p>
 <ul><li>Required: no</li><li>Type: array</li><li>Items<div class="schema"><p>An order comment</p>
-<ul><li>Required: no</li><li>title: comment</li><li>    <span id="email--703773151">
-      <a href="#email--703773151" class="anchor">
+<ul><li>Required: no</li><li>title: comment</li><li>    <span id="email--35946465">
+      <a href="#email--35946465" class="anchor">
         <tt>email</tt>
       </a>
     </span>
 <div class="schema"><p>Email address of the commenting user</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;buser@cakes.com&quot;</tt></li></ul></div></li><li>    <span id="body--698343814">
-      <a href="#body--698343814" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;buser@cakes.com&quot;</tt></li></ul></div></li><li>    <span id="body--652394347">
+      <a href="#body--652394347" class="anchor">
         <tt>body</tt>
       </a>
     </span>
 <div class="schema"><p>Content of the order comment</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;We will not have this cake in stock for several days.&quot;</tt></li></ul></div></li><li>    <span id="date--841371634">
-      <a href="#date--841371634" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;We will not have this cake in stock for several days.&quot;</tt></li></ul></div></li><li>    <span id="date-370314175">
+      <a href="#date-370314175" class="anchor">
         <tt>date</tt>
       </a>
     </span>
@@ -319,7 +319,7 @@
         <span class="status">
           401 Unauthorized
         </span>
-        <p>API key incorrect or missing</p>
+        <p>Access token is incorrect or missing</p>
 
       </div>
 
