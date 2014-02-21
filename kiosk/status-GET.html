@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      GET status - kiosk
+    </title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/cAPI/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/cAPI/github.css" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="content">
+        <h1>
+          <span class="endpoint-name ">
+  <span class="verb">GET</span>
+  <span class="root">kiosk&#8203;/:kiosk_slug&#8203;/</span>
+  <span class="path">status</span>
+  
+</span>
+
+        </h1>
+
+        <div id="nav">
+          
+            <a href="/cAPI/index.html">
+              &#187; decopac
+            </a>
+          
+          
+            <a href="/cAPI/kiosk/index.html">&#187; kiosk</a>
+          
+        </div>
+
+        <p>Get customer kiosk status</p>
+
+
+        
+              <h2 id="request">
+      <a href="#request" class="anchor">
+        Request
+      </a>
+    </h2>
+
+
+              <h3 id="example_request">
+      <a href="#example_request" class="anchor">
+        Example Request
+      </a>
+    </h3>
+
+          <div class="CodeRay"><pre>{
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">kiosk_slug</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">nerdery</span><span class="delimiter">&quot;</span></span>
+}</pre></div>
+
+              <h3 id="request_parameters">
+      <a href="#request_parameters" class="anchor">
+        Request Parameters
+      </a>
+    </h3>
+
+          <div class="schema"><ul><li>    <span id="kiosk_slug--173271380">
+      <a href="#kiosk_slug--173271380" class="anchor">
+        <tt>kiosk_slug</tt>
+      </a>
+    </span>
+<div class="schema"><p>Customer slug. Part of the URL</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;nerdery&quot;</tt></li></ul></div></li></ul></div>
+        
+
+            <h2 id="response">
+      <a href="#response" class="anchor">
+        Response
+      </a>
+    </h2>
+
+        
+              <h3 id="example_response">
+      <a href="#example_response" class="anchor">
+        Example Response
+      </a>
+    </h3>
+
+          <div class="CodeRay"><pre>{
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Nerdery</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">cos_status</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">active</span><span class="delimiter">&quot;</span></span>
+}</pre></div>
+
+              <h3 id="response_parameters">
+      <a href="#response_parameters" class="anchor">
+        Response Parameters
+      </a>
+    </h3>
+
+          <div class="schema"><ul><li>    <span id="name-200100714">
+      <a href="#name-200100714" class="anchor">
+        <tt>name</tt>
+      </a>
+    </span>
+<div class="schema"><p>Customer name</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Nerdery&quot;</tt></li></ul></div></li><li>    <span id="cos_status-27251035">
+      <a href="#cos_status-27251035" class="anchor">
+        <tt>cos_status</tt>
+      </a>
+    </span>
+<div class="schema"><p>Customer COS status</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;active&quot;</tt></li></ul></div></li></ul></div>
+        
+
+            <h3 id="response_codes">
+      <a href="#response_codes" class="anchor">
+        Response Codes
+      </a>
+    </h3>
+
+        
+              <h4 id="successful_response_codes">
+      <a href="#successful_response_codes" class="anchor">
+        Successful Response Codes
+      </a>
+    </h4>
+
+          <ul>
+            
+            <li>
+                    <div class="response-code">
+        <span class="status">
+          200
+        </span>
+        <p>A successful response</p>
+
+      </div>
+
+            </li>
+            
+          </ul>
+        
+
+        
+      </div>
+    </div>
+  </body>
+</html>
+

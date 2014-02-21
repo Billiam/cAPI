@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      GET orders - Cakes.com API v1
+    </title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/cAPI/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/cAPI/github.css" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="content">
+        <h1>
+          <span class="endpoint-name ">
+  <span class="verb">GET</span>
+  <span class="root">api&#8203;/v1&#8203;/</span>
+  <span class="path">orders</span>
+  
+</span>
+
+        </h1>
+
+        <div id="nav">
+          
+            <a href="/cAPI/index.html">
+              &#187; decopac
+            </a>
+          
+          
+            <a href="/cAPI/cakes.com_api_v1/index.html">&#187; Cakes.com API v1</a>
+          
+        </div>
+
+        <p>The list of orders.</p>
+
+
+        
+              <h2 id="request">
+      <a href="#request" class="anchor">
+        Request
+      </a>
+    </h2>
+
+
+              <h3 id="example_request">
+      <a href="#example_request" class="anchor">
+        Example Request
+      </a>
+    </h3>
+
+          <div class="CodeRay"><pre>{
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">api_key</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">active</span><span class="delimiter">&quot;</span></span>: <span class="value">false</span>
+}</pre></div>
+
+              <h3 id="request_parameters">
+      <a href="#request_parameters" class="anchor">
+        Request Parameters
+      </a>
+    </h3>
+
+          <div class="schema"><ul><li>    <span id="api_key--1020901884">
+      <a href="#api_key--1020901884" class="anchor">
+        <tt>api_key</tt>
+      </a>
+    </span>
+<div class="schema"><p>The bakery API key</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li></ul></div></li><li>    <span id="active-452328497">
+      <a href="#active-452328497" class="anchor">
+        <tt>active</tt>
+      </a>
+    </span>
+<div class="schema"><p>When enabled, limits the returned orders to those with a pickup date in the future.</p>
+<ul><li>Required: no</li><li>Type: boolean</li></ul></div></li></ul></div>
+        
+
+            <h2 id="response">
+      <a href="#response" class="anchor">
+        Response
+      </a>
+    </h2>
+
+        
+              <h3 id="example_response">
+      <a href="#example_response" class="anchor">
+        Example Response
+      </a>
+    </h3>
+
+          <div class="CodeRay"><pre>{
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">orders</span><span class="delimiter">&quot;</span></span>: [
+    {
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">order_number</span><span class="delimiter">&quot;</span></span>: <span class="integer">4100</span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">order_state</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">accepted</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">price</span><span class="delimiter">&quot;</span></span>: <span class="float">41.53</span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">item_number</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">13992</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">cake_name</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Dinosaur Train Express</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">size</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">1/2 Sheet</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">flavor</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Chocolate</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">filling</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Cannoli</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">icing_flavor</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Chocolate Fudge</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">inscription_color</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Brown</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">inscription</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Happy Birthday Andrew!</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">notes</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Please add a smiley face above the word happy.</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">requested_pickup</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">2014-02-05 17:55:59 -0600</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">order_placed</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">2014-02-04 14:05:00 -0600</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">order_accepted</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">2014-02-04 16:18:21 -0600</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">customer</span><span class="delimiter">&quot;</span></span>: {
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Andrew Aaronson</span><span class="delimiter">&quot;</span></span>,
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">phone</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">612-555-1212</span><span class="delimiter">&quot;</span></span>,
+        <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaronson@example.com</span><span class="delimiter">&quot;</span></span>
+      },
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">comments</span><span class="delimiter">&quot;</span></span>: [
+        {
+          <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">buser@cakes.com</span><span class="delimiter">&quot;</span></span>,
+          <span class="key"><span class="delimiter">&quot;</span><span class="content">body</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">We will not have this cake in stock for several days.</span><span class="delimiter">&quot;</span></span>,
+          <span class="key"><span class="delimiter">&quot;</span><span class="content">date</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">2014-02-05 18:45:57 -0600</span><span class="delimiter">&quot;</span></span>
+        }
+      ]
+    }
+  ]
+}</pre></div>
+
+              <h3 id="response_parameters">
+      <a href="#response_parameters" class="anchor">
+        Response Parameters
+      </a>
+    </h3>
+
+          <div class="schema"><ul><li>    <span id="orders--183257722">
+      <a href="#orders--183257722" class="anchor">
+        <tt>orders</tt>
+      </a>
+    </span>
+<div class="schema"><ul><li>Required: no</li><li>Type: array</li><li>Items<div class="schema"><p>A cake order</p>
+<ul><li>Required: no</li><li>title: order</li><li>    <span id="order_number--912835626">
+      <a href="#order_number--912835626" class="anchor">
+        <tt>order_number</tt>
+      </a>
+    </span>
+<div class="schema"><p>The order number</p>
+<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>4100</tt></li></ul></div></li><li>    <span id="order_state-505727506">
+      <a href="#order_state-505727506" class="anchor">
+        <tt>order_state</tt>
+      </a>
+    </span>
+<div class="schema"><p>The order status</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;accepted&quot;</tt></li><li>Enum: <tt>accepted</tt>, <tt>conditional</tt>, <tt>cancelled</tt>, <tt>new</tt></li></ul></div></li><li>    <span id="price--332312789">
+      <a href="#price--332312789" class="anchor">
+        <tt>price</tt>
+      </a>
+    </span>
+<div class="schema"><p>The order price, excluding tax</p>
+<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>41.53</tt></li></ul></div></li><li>    <span id="item_number--130231963">
+      <a href="#item_number--130231963" class="anchor">
+        <tt>item_number</tt>
+      </a>
+    </span>
+<div class="schema"><p>The cake ID being ordered.</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;13992&quot;</tt></li></ul></div></li><li>    <span id="cake_name--1072590951">
+      <a href="#cake_name--1072590951" class="anchor">
+        <tt>cake_name</tt>
+      </a>
+    </span>
+<div class="schema"><p>The name of the cake</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Dinosaur Train Express&quot;</tt></li></ul></div></li><li>    <span id="size-358731732">
+      <a href="#size-358731732" class="anchor">
+        <tt>size</tt>
+      </a>
+    </span>
+<div class="schema"><p>Cake size</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;1/2 Sheet&quot;</tt></li></ul></div></li><li>    <span id="flavor--238966336">
+      <a href="#flavor--238966336" class="anchor">
+        <tt>flavor</tt>
+      </a>
+    </span>
+<div class="schema"><p>Cake flavor</p>
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Chocolate&quot;</tt></li></ul></div></li><li>    <span id="filling-913747594">
+      <a href="#filling-913747594" class="anchor">
+        <tt>filling</tt>
+      </a>
+    </span>
+<div class="schema"><p>Cake filling flavor</p>
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Cannoli&quot;</tt></li></ul></div></li><li>    <span id="icing_flavor-557022064">
+      <a href="#icing_flavor-557022064" class="anchor">
+        <tt>icing_flavor</tt>
+      </a>
+    </span>
+<div class="schema"><p>Cake icing flavor</p>
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Chocolate Fudge&quot;</tt></li></ul></div></li><li>    <span id="inscription_color-363462214">
+      <a href="#inscription_color-363462214" class="anchor">
+        <tt>inscription_color</tt>
+      </a>
+    </span>
+<div class="schema"><p>Custom message icing color</p>
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Brown&quot;</tt></li></ul></div></li><li>    <span id="inscription--1039813093">
+      <a href="#inscription--1039813093" class="anchor">
+        <tt>inscription</tt>
+      </a>
+    </span>
+<div class="schema"><p>Custom message content</p>
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Happy Birthday Andrew!&quot;</tt></li></ul></div></li><li>    <span id="notes-781457106">
+      <a href="#notes-781457106" class="anchor">
+        <tt>notes</tt>
+      </a>
+    </span>
+<div class="schema"><p>Additional notes for the cake decorator</p>
+<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Please add a smiley face above the word happy.&quot;</tt></li></ul></div></li><li>    <span id="requested_pickup-465417485">
+      <a href="#requested_pickup-465417485" class="anchor">
+        <tt>requested_pickup</tt>
+      </a>
+    </span>
+<div class="schema"><p>The requested pickup date</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 17:55:59 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_placed-1003068582">
+      <a href="#order_placed-1003068582" class="anchor">
+        <tt>order_placed</tt>
+      </a>
+    </span>
+<div class="schema"><p>The date that the order was placed</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 14:05:00 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_accepted-50422745">
+      <a href="#order_accepted-50422745" class="anchor">
+        <tt>order_accepted</tt>
+      </a>
+    </span>
+<div class="schema"><p>The date that the order was accepted</p>
+<ul><li>Required: no</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 16:18:21 -0600&quot;</tt></li></ul></div></li><li>    <span id="customer--150315428">
+      <a href="#customer--150315428" class="anchor">
+        <tt>customer</tt>
+      </a>
+    </span>
+<div class="schema"><p>Customer information</p>
+<ul><li>Required: yes</li><li>    <span id="name-491626796">
+      <a href="#name-491626796" class="anchor">
+        <tt>name</tt>
+      </a>
+    </span>
+<div class="schema"><p>Customer name</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Andrew Aaronson&quot;</tt></li></ul></div></li><li>    <span id="phone-785075660">
+      <a href="#phone-785075660" class="anchor">
+        <tt>phone</tt>
+      </a>
+    </span>
+<div class="schema"><p>Customer phone number</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;612-555-1212&quot;</tt></li></ul></div></li><li>    <span id="email--399043693">
+      <a href="#email--399043693" class="anchor">
+        <tt>email</tt>
+      </a>
+    </span>
+<div class="schema"><p>Customer email address</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaronson@example.com&quot;</tt></li></ul></div></li></ul></div></li><li>    <span id="comments--697237072">
+      <a href="#comments--697237072" class="anchor">
+        <tt>comments</tt>
+      </a>
+    </span>
+<div class="schema"><p>Order comments</p>
+<ul><li>Required: no</li><li>Type: array</li><li>Items<div class="schema"><p>An order comment</p>
+<ul><li>Required: no</li><li>title: comment</li><li>    <span id="email--703773151">
+      <a href="#email--703773151" class="anchor">
+        <tt>email</tt>
+      </a>
+    </span>
+<div class="schema"><p>Email address of the commenting user</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;buser@cakes.com&quot;</tt></li></ul></div></li><li>    <span id="body--698343814">
+      <a href="#body--698343814" class="anchor">
+        <tt>body</tt>
+      </a>
+    </span>
+<div class="schema"><p>Content of the order comment</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;We will not have this cake in stock for several days.&quot;</tt></li></ul></div></li><li>    <span id="date--841371634">
+      <a href="#date--841371634" class="anchor">
+        <tt>date</tt>
+      </a>
+    </span>
+<div class="schema"><p>The date the comment was created</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 18:45:57 -0600&quot;</tt></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div>
+        
+
+            <h3 id="response_codes">
+      <a href="#response_codes" class="anchor">
+        Response Codes
+      </a>
+    </h3>
+
+        
+              <h4 id="successful_response_codes">
+      <a href="#successful_response_codes" class="anchor">
+        Successful Response Codes
+      </a>
+    </h4>
+
+          <ul>
+            
+            <li>
+                    <div class="response-code">
+        <span class="status">
+          200 OK
+        </span>
+        <p>A list of current orders</p>
+
+      </div>
+
+            </li>
+            
+          </ul>
+        
+
+        
+              <h4 id="failure_response_codes">
+      <a href="#failure_response_codes" class="anchor">
+        Failure Response Codes
+      </a>
+    </h4>
+
+          <ul>
+            
+            <li>
+                    <div class="response-code">
+        <span class="status">
+          401 Unauthorized
+        </span>
+        <p>API key incorrect or missing</p>
+
+      </div>
+
+            </li>
+            
+            <li>
+                    <div class="response-code">
+        <span class="status">
+          403 Forbidden
+        </span>
+        <p>Permission denied to access order resource</p>
+
+      </div>
+
+            </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </body>
+</html>
+

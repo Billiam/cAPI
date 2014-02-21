@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      POST access_token - Cakes.com API v1
+    </title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="/cAPI/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/cAPI/github.css" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="content">
+        <h1>
+          <span class="endpoint-name ">
+  <span class="verb">POST</span>
+  <span class="root">api&#8203;/v1&#8203;/</span>
+  <span class="path">access_token</span>
+  
+</span>
+
+        </h1>
+
+        <div id="nav">
+          
+            <a href="/cAPI/index.html">
+              &#187; decopac
+            </a>
+          
+          
+            <a href="/cAPI/cakes.com_api_v1/index.html">&#187; Cakes.com API v1</a>
+          
+        </div>
+
+        <p>Generate access tokens from bakery credentials</p>
+
+
+        
+              <h2 id="request">
+      <a href="#request" class="anchor">
+        Request
+      </a>
+    </h2>
+
+
+              <h3 id="example_request">
+      <a href="#example_request" class="anchor">
+        Example Request
+      </a>
+    </h3>
+
+          <div class="CodeRay"><pre>{
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">user@example.com</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">password</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">battery horse staple</span><span class="delimiter">&quot;</span></span>
+}</pre></div>
+
+              <h3 id="request_parameters">
+      <a href="#request_parameters" class="anchor">
+        Request Parameters
+      </a>
+    </h3>
+
+          <div class="schema"><ul><li>    <span id="email-292191605">
+      <a href="#email-292191605" class="anchor">
+        <tt>email</tt>
+      </a>
+    </span>
+<div class="schema"><p>The bakery email address</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;user@example.com&quot;</tt></li></ul></div></li><li>    <span id="password-952630855">
+      <a href="#password-952630855" class="anchor">
+        <tt>password</tt>
+      </a>
+    </span>
+<div class="schema"><p>The bakery password</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;battery horse staple&quot;</tt></li></ul></div></li></ul></div>
+        
+
+            <h2 id="response">
+      <a href="#response" class="anchor">
+        Response
+      </a>
+    </h2>
+
+        
+              <h3 id="example_response">
+      <a href="#example_response" class="anchor">
+        Example Response
+      </a>
+    </h3>
+
+          <div class="CodeRay"><pre>{
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">access_token</span><span class="delimiter">&quot;</span></span>: {
+    <span class="key"><span class="delimiter">&quot;</span><span class="content">code</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd</span><span class="delimiter">&quot;</span></span>
+  }
+}</pre></div>
+
+              <h3 id="response_parameters">
+      <a href="#response_parameters" class="anchor">
+        Response Parameters
+      </a>
+    </h3>
+
+          <div class="schema"><ul><li>    <span id="access_token-210053990">
+      <a href="#access_token-210053990" class="anchor">
+        <tt>access_token</tt>
+      </a>
+    </span>
+<div class="schema"><ul><li>Required: no</li><li>    <span id="code-916994027">
+      <a href="#code-916994027" class="anchor">
+        <tt>code</tt>
+      </a>
+    </span>
+<div class="schema"><ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li><li>title: Access token code</li></ul></div></li></ul></div></li></ul></div>
+        
+
+            <h3 id="response_codes">
+      <a href="#response_codes" class="anchor">
+        Response Codes
+      </a>
+    </h3>
+
+        
+              <h4 id="successful_response_codes">
+      <a href="#successful_response_codes" class="anchor">
+        Successful Response Codes
+      </a>
+    </h4>
+
+          <ul>
+            
+            <li>
+                    <div class="response-code">
+        <span class="status">
+          201 Created
+        </span>
+        <p>Access token created successfully</p>
+
+      </div>
+
+            </li>
+            
+          </ul>
+        
+
+        
+              <h4 id="failure_response_codes">
+      <a href="#failure_response_codes" class="anchor">
+        Failure Response Codes
+      </a>
+    </h4>
+
+          <ul>
+            
+            <li>
+                    <div class="response-code">
+        <span class="status">
+          401 Unauthorized
+        </span>
+        <p>Authentication failed</p>
+
+      </div>
+
+            </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </body>
+</html>
+
