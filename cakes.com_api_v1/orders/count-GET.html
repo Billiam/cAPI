@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      POST access_token - Cakes.com API v1
+      GET orders/count - Cakes.com API v1
     </title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="/cAPI/styles.css" />
@@ -13,9 +13,9 @@
       <div id="content">
         <h1>
           <span class="endpoint-name ">
-  <span class="verb">POST</span>
+  <span class="verb">GET</span>
   <span class="root">api&#8203;/v1&#8203;/</span>
-  <span class="path">access_token</span>
+  <span class="path">orders&#8203;/count</span>
   
 </span>
 
@@ -32,7 +32,7 @@
           
         </div>
 
-        <p>Generate access tokens from bakery credentials</p>
+        <p>The list of orders.</p>
 
 
         
@@ -50,8 +50,8 @@
     </h3>
 
           <div class="CodeRay"><pre>{
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">user@example.com</span><span class="delimiter">&quot;</span></span>,
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">password</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">battery horse staple</span><span class="delimiter">&quot;</span></span>
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">access_token</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd</span><span class="delimiter">&quot;</span></span>,
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">active</span><span class="delimiter">&quot;</span></span>: <span class="value">true</span>
 }</pre></div>
 
               <h3 id="request_parameters">
@@ -60,19 +60,19 @@
       </a>
     </h3>
 
-          <div class="schema"><ul><li>    <span id="email-4512917321174531011">
-      <a href="#email-4512917321174531011" class="anchor">
-        <tt>email</tt>
+          <div class="schema"><ul><li>    <span id="access_token-1847026622492637594">
+      <a href="#access_token-1847026622492637594" class="anchor">
+        <tt>access_token</tt>
       </a>
     </span>
-<div class="schema"><p>The bakery email address</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;user@example.com&quot;</tt></li></ul></div></li><li>    <span id="password-3984124748191413611">
-      <a href="#password-3984124748191413611" class="anchor">
-        <tt>password</tt>
+<div class="schema"><p>The bakery access token</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li></ul></div></li><li>    <span id="active--2815129456032857201">
+      <a href="#active--2815129456032857201" class="anchor">
+        <tt>active</tt>
       </a>
     </span>
-<div class="schema"><p>The bakery password</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;battery horse staple&quot;</tt></li></ul></div></li></ul></div>
+<div class="schema"><p>When enabled, limits the orders count to those with a pickup date in the future.</p>
+<ul><li>Required: no</li><li>Type: boolean</li></ul></div></li></ul></div>
         
 
             <h2 id="response">
@@ -89,9 +89,7 @@
     </h3>
 
           <div class="CodeRay"><pre>{
-  <span class="key"><span class="delimiter">&quot;</span><span class="content">access_token</span><span class="delimiter">&quot;</span></span>: {
-    <span class="key"><span class="delimiter">&quot;</span><span class="content">code</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd</span><span class="delimiter">&quot;</span></span>
-  }
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">orders_count</span><span class="delimiter">&quot;</span></span>: <span class="integer">5</span>
 }</pre></div>
 
               <h3 id="response_parameters">
@@ -100,17 +98,13 @@
       </a>
     </h3>
 
-          <div class="schema"><ul><li>    <span id="access_token-1564923234759229446">
-      <a href="#access_token-1564923234759229446" class="anchor">
-        <tt>access_token</tt>
+          <div class="schema"><ul><li>    <span id="orders_count--2720551152748496610">
+      <a href="#orders_count--2720551152748496610" class="anchor">
+        <tt>orders_count</tt>
       </a>
     </span>
-<div class="schema"><ul><li>Required: no</li><li>    <span id="code-2313285682467619797">
-      <a href="#code-2313285682467619797" class="anchor">
-        <tt>code</tt>
-      </a>
-    </span>
-<div class="schema"><ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li><li>title: Access token code</li></ul></div></li></ul></div></li></ul></div>
+<div class="schema"><p>The count of orders</p>
+<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>5</tt></li></ul></div></li></ul></div>
         
 
             <h3 id="response_codes">
@@ -131,9 +125,9 @@
             <li>
                     <div class="response-code">
         <span class="status">
-          201 Created
+          200 OK
         </span>
-        <p>Access token created successfully</p>
+        <p>A count of current orders</p>
 
       </div>
 
@@ -167,7 +161,7 @@
         <span class="status">
           403 Forbidden
         </span>
-        <p>Permission denied to access resource</p>
+        <p>Permission denied to access order resource</p>
 
       </div>
 
