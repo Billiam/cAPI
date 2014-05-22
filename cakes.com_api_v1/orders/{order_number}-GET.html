@@ -60,14 +60,14 @@
       </a>
     </h3>
 
-          <div class="schema"><ul><li>    <span id="access_token-220128085">
-      <a href="#access_token-220128085" class="anchor">
+          <div class="schema"><ul><li>    <span id="access_token-1847026622492637594">
+      <a href="#access_token-1847026622492637594" class="anchor">
         <tt>access_token</tt>
       </a>
     </span>
 <div class="schema"><p>The bakery access token</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li></ul></div></li><li>    <span id="order_number--73556080">
-      <a href="#order_number--73556080" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaaaaaaaabbbbbbbbbbbccccccccccccddddddddd&quot;</tt></li></ul></div></li><li>    <span id="order_number--2934108857894103481">
+      <a href="#order_number--2934108857894103481" class="anchor">
         <tt>order_number</tt>
       </a>
     </span>
@@ -108,15 +108,20 @@ Parameter should replace the <code>{order_number}</code> in the URL.</p>
   <span class="key"><span class="delimiter">&quot;</span><span class="content">customer</span><span class="delimiter">&quot;</span></span>: {
     <span class="key"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Andrew Aaronson</span><span class="delimiter">&quot;</span></span>,
     <span class="key"><span class="delimiter">&quot;</span><span class="content">phone</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">612-555-1212</span><span class="delimiter">&quot;</span></span>,
-    <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaronson@example.com</span><span class="delimiter">&quot;</span></span>,
-    <span class="key"><span class="delimiter">&quot;</span><span class="content">comments</span><span class="delimiter">&quot;</span></span>: [
-      {
-        <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">buser@cakes.com</span><span class="delimiter">&quot;</span></span>,
-        <span class="key"><span class="delimiter">&quot;</span><span class="content">body</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">We will not have this cake in stock for several days.</span><span class="delimiter">&quot;</span></span>,
-        <span class="key"><span class="delimiter">&quot;</span><span class="content">date</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">2014-02-05 18:45:57 -0600</span><span class="delimiter">&quot;</span></span>
-      }
-    ]
-  }
+    <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">aaronson@example.com</span><span class="delimiter">&quot;</span></span>
+  },
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">images</span><span class="delimiter">&quot;</span></span>: [
+    {
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">image_url</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">http://example.com/image.jpg</span><span class="delimiter">&quot;</span></span>
+    }
+  ],
+  <span class="key"><span class="delimiter">&quot;</span><span class="content">comments</span><span class="delimiter">&quot;</span></span>: [
+    {
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">email</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">buser@cakes.com</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">body</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">We will not have this cake in stock for several days.</span><span class="delimiter">&quot;</span></span>,
+      <span class="key"><span class="delimiter">&quot;</span><span class="content">date</span><span class="delimiter">&quot;</span></span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">2014-02-05 18:45:57 -0600</span><span class="delimiter">&quot;</span></span>
+    }
+  ]
 }</pre></div>
 
               <h3 id="response_parameters">
@@ -125,146 +130,159 @@ Parameter should replace the <code>{order_number}</code> in the URL.</p>
       </a>
     </h3>
 
-          <div class="schema"><ul><li>    <span id="order_number-249733656">
-      <a href="#order_number-249733656" class="anchor">
+          <div class="schema"><ul><li>    <span id="order_number--4498333422590925254">
+      <a href="#order_number--4498333422590925254" class="anchor">
         <tt>order_number</tt>
       </a>
     </span>
 <div class="schema"><p>The order number</p>
-<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>4100</tt></li></ul></div></li><li>    <span id="order_state-31105648">
-      <a href="#order_state-31105648" class="anchor">
+<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>4100</tt></li></ul></div></li><li>    <span id="order_state-3850428487392179501">
+      <a href="#order_state-3850428487392179501" class="anchor">
         <tt>order_state</tt>
       </a>
     </span>
 <div class="schema"><p>The order status</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;accepted&quot;</tt></li><li>Enum: <tt>accepted</tt>, <tt>conditional</tt>, <tt>cancelled</tt>, <tt>new</tt></li></ul></div></li><li>    <span id="price-893119802">
-      <a href="#price-893119802" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;accepted&quot;</tt></li><li>Enum: <tt>accepted</tt>, <tt>conditional</tt>, <tt>cancelled</tt>, <tt>new</tt></li></ul></div></li><li>    <span id="price-4527479444714511327">
+      <a href="#price-4527479444714511327" class="anchor">
         <tt>price</tt>
       </a>
     </span>
 <div class="schema"><p>The order price, excluding tax</p>
-<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>41.53</tt></li></ul></div></li><li>    <span id="item_number-994189996">
-      <a href="#item_number-994189996" class="anchor">
+<ul><li>Required: yes</li><li>Type: number</li><li>Example: <tt>41.53</tt></li></ul></div></li><li>    <span id="item_number--373679961003805040">
+      <a href="#item_number--373679961003805040" class="anchor">
         <tt>item_number</tt>
       </a>
     </span>
 <div class="schema"><p>The cake ID being ordered.</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;13992&quot;</tt></li></ul></div></li><li>    <span id="cake_name-262079664">
-      <a href="#cake_name-262079664" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;13992&quot;</tt></li></ul></div></li><li>    <span id="cake_name-2654437408365122851">
+      <a href="#cake_name-2654437408365122851" class="anchor">
         <tt>cake_name</tt>
       </a>
     </span>
 <div class="schema"><p>The name of the cake</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Dinosaur Train Express&quot;</tt></li></ul></div></li><li>    <span id="size-284116815">
-      <a href="#size-284116815" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Dinosaur Train Express&quot;</tt></li></ul></div></li><li>    <span id="size--1944695444014785409">
+      <a href="#size--1944695444014785409" class="anchor">
         <tt>size</tt>
       </a>
     </span>
 <div class="schema"><p>Cake size</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;1/2 Sheet&quot;</tt></li></ul></div></li><li>    <span id="flavor--1070131120">
-      <a href="#flavor--1070131120" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;1/2 Sheet&quot;</tt></li></ul></div></li><li>    <span id="flavor--466415907531280505">
+      <a href="#flavor--466415907531280505" class="anchor">
         <tt>flavor</tt>
       </a>
     </span>
 <div class="schema"><p>Cake flavor</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Chocolate&quot;</tt></li></ul></div></li><li>    <span id="filling--1013103589">
-      <a href="#filling--1013103589" class="anchor">
+<ul><li>Required: no</li><li>Type: <ul><li>string</li><li>nil</li></ul></li><li>Example: <tt>&quot;Chocolate&quot;</tt></li></ul></div></li><li>    <span id="filling-240865266130530490">
+      <a href="#filling-240865266130530490" class="anchor">
         <tt>filling</tt>
       </a>
     </span>
 <div class="schema"><p>Cake filling flavor</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Cannoli&quot;</tt></li></ul></div></li><li>    <span id="icing_flavor-451221377">
-      <a href="#icing_flavor-451221377" class="anchor">
+<ul><li>Required: no</li><li>Type: <ul><li>string</li><li>nil</li></ul></li><li>Example: <tt>&quot;Cannoli&quot;</tt></li></ul></div></li><li>    <span id="icing_flavor--4024236703762238445">
+      <a href="#icing_flavor--4024236703762238445" class="anchor">
         <tt>icing_flavor</tt>
       </a>
     </span>
 <div class="schema"><p>Cake icing flavor</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Chocolate Fudge&quot;</tt></li></ul></div></li><li>    <span id="inscription_color--991214194">
-      <a href="#inscription_color--991214194" class="anchor">
+<ul><li>Required: no</li><li>Type: <ul><li>string</li><li>nil</li></ul></li><li>Example: <tt>&quot;Chocolate Fudge&quot;</tt></li></ul></div></li><li>    <span id="inscription_color--753789397022972972">
+      <a href="#inscription_color--753789397022972972" class="anchor">
         <tt>inscription_color</tt>
       </a>
     </span>
 <div class="schema"><p>Custom message icing color</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Brown&quot;</tt></li></ul></div></li><li>    <span id="inscription--87492819">
-      <a href="#inscription--87492819" class="anchor">
+<ul><li>Required: no</li><li>Type: <ul><li>string</li><li>nil</li></ul></li><li>Example: <tt>&quot;Brown&quot;</tt></li></ul></div></li><li>    <span id="inscription--4521863190990065837">
+      <a href="#inscription--4521863190990065837" class="anchor">
         <tt>inscription</tt>
       </a>
     </span>
 <div class="schema"><p>Custom message content</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Happy Birthday Andrew!&quot;</tt></li></ul></div></li><li>    <span id="notes--568578451">
-      <a href="#notes--568578451" class="anchor">
+<ul><li>Required: no</li><li>Type: <ul><li>string</li><li>nil</li></ul></li><li>Example: <tt>&quot;Happy Birthday Andrew!&quot;</tt></li></ul></div></li><li>    <span id="notes--2429287437187743382">
+      <a href="#notes--2429287437187743382" class="anchor">
         <tt>notes</tt>
       </a>
     </span>
 <div class="schema"><p>Additional notes for the cake decorator</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Example: <tt>&quot;Please add a smiley face above the word happy.&quot;</tt></li></ul></div></li><li>    <span id="requested_pickup--728874608">
-      <a href="#requested_pickup--728874608" class="anchor">
+<ul><li>Required: no</li><li>Type: <ul><li>string</li><li>nil</li></ul></li><li>Example: <tt>&quot;Please add a smiley face above the word happy.&quot;</tt></li></ul></div></li><li>    <span id="requested_pickup--4399580436731385924">
+      <a href="#requested_pickup--4399580436731385924" class="anchor">
         <tt>requested_pickup</tt>
       </a>
     </span>
 <div class="schema"><p>The requested pickup date</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 17:55:59 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_placed-496013896">
-      <a href="#order_placed-496013896" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 17:55:59 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_placed--162755754409363222">
+      <a href="#order_placed--162755754409363222" class="anchor">
         <tt>order_placed</tt>
       </a>
     </span>
 <div class="schema"><p>The date that the order was placed</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 14:05:00 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_accepted-14852903">
-      <a href="#order_accepted-14852903" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 14:05:00 -0600&quot;</tt></li></ul></div></li><li>    <span id="order_accepted-2166890800463225275">
+      <a href="#order_accepted-2166890800463225275" class="anchor">
         <tt>order_accepted</tt>
       </a>
     </span>
 <div class="schema"><p>The date that the order was accepted</p>
-<ul><li>Required: no</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 16:18:21 -0600&quot;</tt></li></ul></div></li><li>    <span id="customer-321581273">
-      <a href="#customer-321581273" class="anchor">
+<ul><li>Required: no</li><li>Type: <ul><li>string</li><li>nil</li></ul></li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-04 16:18:21 -0600&quot;</tt></li></ul></div></li><li>    <span id="customer--468628822165585985">
+      <a href="#customer--468628822165585985" class="anchor">
         <tt>customer</tt>
       </a>
     </span>
 <div class="schema"><p>Customer information</p>
-<ul><li>Required: yes</li><li>    <span id="name-368950420">
-      <a href="#name-368950420" class="anchor">
+<ul><li>Required: yes</li><li>    <span id="name--4343024584142861841">
+      <a href="#name--4343024584142861841" class="anchor">
         <tt>name</tt>
       </a>
     </span>
 <div class="schema"><p>Customer name</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Andrew Aaronson&quot;</tt></li></ul></div></li><li>    <span id="phone--232637379">
-      <a href="#phone--232637379" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;Andrew Aaronson&quot;</tt></li></ul></div></li><li>    <span id="phone--1159870373684589317">
+      <a href="#phone--1159870373684589317" class="anchor">
         <tt>phone</tt>
       </a>
     </span>
 <div class="schema"><p>Customer phone number</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;612-555-1212&quot;</tt></li></ul></div></li><li>    <span id="email--532963313">
-      <a href="#email--532963313" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;612-555-1212&quot;</tt></li></ul></div></li><li>    <span id="email--2453039136120369840">
+      <a href="#email--2453039136120369840" class="anchor">
         <tt>email</tt>
       </a>
     </span>
 <div class="schema"><p>Customer email address</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaronson@example.com&quot;</tt></li></ul></div></li><li>    <span id="comments-838838100">
-      <a href="#comments-838838100" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;aaronson@example.com&quot;</tt></li></ul></div></li></ul></div></li><li>    <span id="images--3773203060078686216">
+      <a href="#images--3773203060078686216" class="anchor">
+        <tt>images</tt>
+      </a>
+    </span>
+<div class="schema"><p>Upload image urls</p>
+<ul><li>Required: no</li><li>Type: <ul><li>array</li><li>nil</li></ul></li><li>Items<div class="schema"><p>An upload image</p>
+<ul><li>Required: no</li><li>title: image</li><li>    <span id="image_url--2837974442452139082">
+      <a href="#image_url--2837974442452139082" class="anchor">
+        <tt>image_url</tt>
+      </a>
+    </span>
+<div class="schema"><p>An uploaded image URL</p>
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;http://example.com/image.jpg&quot;</tt></li></ul></div></li></ul></div></li></ul></div></li><li>    <span id="comments-3447876623107820134">
+      <a href="#comments-3447876623107820134" class="anchor">
         <tt>comments</tt>
       </a>
     </span>
 <div class="schema"><p>Order comments</p>
-<ul><li>Required: no</li><li>Type: array</li><li>Items<div class="schema"><p>An order comment</p>
-<ul><li>Required: no</li><li>title: comment</li><li>    <span id="email--35946465">
-      <a href="#email--35946465" class="anchor">
+<ul><li>Required: no</li><li>Type: <ul><li>array</li><li>nil</li></ul></li><li>Items<div class="schema"><p>An order comment</p>
+<ul><li>Required: no</li><li>title: comment</li><li>    <span id="email--4024126360121491783">
+      <a href="#email--4024126360121491783" class="anchor">
         <tt>email</tt>
       </a>
     </span>
 <div class="schema"><p>Email address of the commenting user</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;buser@cakes.com&quot;</tt></li></ul></div></li><li>    <span id="body--652394347">
-      <a href="#body--652394347" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;buser@cakes.com&quot;</tt></li></ul></div></li><li>    <span id="body--3440272697649675705">
+      <a href="#body--3440272697649675705" class="anchor">
         <tt>body</tt>
       </a>
     </span>
 <div class="schema"><p>Content of the order comment</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;We will not have this cake in stock for several days.&quot;</tt></li></ul></div></li><li>    <span id="date-370314175">
-      <a href="#date-370314175" class="anchor">
+<ul><li>Required: yes</li><li>Type: string</li><li>Example: <tt>&quot;We will not have this cake in stock for several days.&quot;</tt></li></ul></div></li><li>    <span id="date--1333645438959596501">
+      <a href="#date--1333645438959596501" class="anchor">
         <tt>date</tt>
       </a>
     </span>
 <div class="schema"><p>The date the comment was created</p>
-<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 18:45:57 -0600&quot;</tt></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li></ul></div>
+<ul><li>Required: yes</li><li>Type: string</li><li>Format: date-time</li><li>Example: <tt>&quot;2014-02-05 18:45:57 -0600&quot;</tt></li></ul></div></li></ul></div></li></ul></div></li></ul></div>
         
 
             <h3 id="response_codes">
